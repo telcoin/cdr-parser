@@ -1,0 +1,18 @@
+[package]
+name = "cdr_parser"
+version = "0.1.0"
+authors = ["Mathias Hällman <github@mths.se>"]
+license = "MIT"
+description = "Parser for Call Detail Records"
+
+[lib]
+name = "cdr_parser"
+path = "src/lib.rs"
+
+[dependencies]
+dotenv = "0.10.1"
+nom = "3.2.0"
+serde = "1.0.15"
+serde_derive = "1.0.15"
+serde_json = "1.0.4"
+walkdir = "1.0.7"
