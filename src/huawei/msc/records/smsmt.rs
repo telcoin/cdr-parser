@@ -77,7 +77,7 @@ named_args!(subrec_4 (rec: Record) <Record>,
     >>  _concatenated_sms_reference_number: opt!(tlv!(0x9F, 0x81, 0x46 => ignore))
     >>  _sequence_number_of_the_current_sms: opt!(tlv!(0x9F, 0x81, 0x47 => ignore))
     >>  _hot_billing_tag: opt!(tlv!(0x9F, 0x81, 0x48 => ignore))
-    >>  _origination: tlv!(0x9F, 0x81, 0x49 => ignore)
+    >>  _origination: opt!(tlv!(0x9F, 0x81, 0x49 => ignore))
     >>  _call_reference: tlv!(0x9F, 0x81, 0x4A => ignore)
     >>  (rec)
     )
